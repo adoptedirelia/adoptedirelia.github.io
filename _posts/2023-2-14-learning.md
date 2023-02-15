@@ -1,6 +1,7 @@
 ---
 title: A test exapmle
 commentable: true
+edit: true
 Edit: 2023-02-14
 mathjax: true
 mermaid: true
