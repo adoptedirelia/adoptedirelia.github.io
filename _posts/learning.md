@@ -1,7 +1,7 @@
 ---
 title: A test exapmle
 commentable: true
-Edit: 2023-2-15
+Edit: 2023-02-14
 mathjax: true
 mermaid: true
 tags: learning test
