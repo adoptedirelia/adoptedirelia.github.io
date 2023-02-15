@@ -2,7 +2,7 @@
 title: Compiler Principles -Chapter 5
 commentable: false
 date: 2023-02-15
-modified: false
+modified: true
 Edit: 2023-02-15
 mathjax: true
 mermaid: true
@@ -22,7 +22,7 @@ description: 编译原理第五章学习笔记：语义分析和中间代码生�
     Gen(J,_,_,0)
     ```
 
-2. $E \rightarrow i^{1} rop i{2}$
+2. $E \rightarrow i^{1} rop i^{2}$
 
     ```
     E.TC = NXQ
