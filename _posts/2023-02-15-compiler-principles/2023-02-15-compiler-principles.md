@@ -1,6 +1,6 @@
 ---
 title: Compiler Principles -Chapter 5
-commentable: false
+commentable: true
 date: 2023-02-15
 modified: true
 Edit: 2023-02-15
