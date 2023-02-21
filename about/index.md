@@ -9,11 +9,13 @@ mathjax: true
 ---
 
 # Me
-我是北京交通大学在读本科生，大三，计算机科学与技术专业。这个网站主要用于分享我的学习笔记和blog～
+This is zdj's personal website. I am currntly a junior. I mayjor in computer science. What interests me most is computer vision and natural language process. 
+Meanwhile, I am doing some related research on semantic segmantation. 
+This webstie mainly records my study notes, paper reading and life bolgs
 
 # This Site
-这个网站是大体框架是参照[这个博主](https://github.com/yk-liu)的，他提供了初始网站代码，我也对初始代码进行了一定程度的更新，所以如果你喜欢
-这个网站的设计，直接用博主的初始代码即可。
+
+The main structure of this website refers to [this link](https://github.com/yk-liu). The code is open source and I modify some parts of original code. If you like the desgin of this website, you can clike [this link](https://github.com/yk-liu) to create your own website based on the original structure.
 
 # Posts
 
