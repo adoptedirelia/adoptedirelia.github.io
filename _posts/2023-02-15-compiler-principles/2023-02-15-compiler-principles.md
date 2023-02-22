@@ -6,7 +6,7 @@ modified: true
 Edit: 2023-02-15
 mathjax: true
 mermaid: true
-tags: compiler-principle notes
+tags: Compiler-Principle notes
 categories: study notes
 description: 编译原理第五章学习笔记：语义分析和中间代码生成
 ---
