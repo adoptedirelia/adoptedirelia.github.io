@@ -59,7 +59,7 @@ description: 编译原理第二章学习笔记：上下文无关文法和语言
 
     2. 对P中的每一个产生式$A \rightarrow \gamma$ 若$\gamma \in V_t^*$，则将A放入$V_n^1$中。
 
-    3. 对于每个产生式$A \rightarrow X_1X_2...X_n$,若$X_i \in V_t or X_i \in V_n^1$，将A放入$V_n^1$中
+    3. 对于每个产生式$A \rightarrow X_1X_2...X_n$,若 $X_i \in V_t or X_i \in V_n^1$，将A放入$V_n^1$中
 
     4. 重复3，直到$V_n^1$不继续增大
 
