@@ -75,9 +75,6 @@ demonstrate the potential of the method to be a robust baseline in the few-to-fe
     $\hat{M} = M\ matmul \ MLP(S)$
 
 
-
-# Experiments
-
 # Conclusion
 
 Our MM-Former introduces the paradigm of decompose first and
