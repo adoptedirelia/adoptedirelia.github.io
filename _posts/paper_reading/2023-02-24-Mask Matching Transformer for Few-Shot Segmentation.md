@@ -9,7 +9,6 @@ mermaid: true
 tags: Few-Shot Semantic-Segmentation
 categories: study paper-reading 
 description: (2022NeurlIPS)Mask Matching Transformer for Few-Shot Segmentation
-status: Writing
 ---
 
 # Abstract
@@ -58,8 +57,31 @@ demonstrate the potential of the method to be a robust baseline in the few-to-fe
 
     TLayer denotes a transformer decoder layer.
 
-    
+- Feature Align Module
+
+    <img src="https://raw.githubusercontent.com/adoptedirelia/pictures_of_posts/main/Mask%20Matching%20Transformer%20for%20Few-Shot/pic3.png" width="100%"> 
+
+
+
+
+- Learnable Matching Block
+
+    Final mask is computed as:
+
+    $S = cos(P_s^{gt},P_Q^n)$
+
+    $\hat{M} = M\ matmul \ MLP(S)$
+
+
 
 # Experiments
 
 # Conclusion
+
+Our MM-Former introduces the paradigm of decompose first and
+then blend to the research of few-shot segmentation, which is a totally new perspective and may
+inspire future researchers to develop more advanced versions.
+
+However, there is still a large gap
+between the current results and the oracle (≈ 20% mIoU). How to further narrow this gap is our
+future research focus.
