@@ -2,7 +2,7 @@
 title: How to use docker on Macbook
 commentable: true
 date: 2023-03-02
-modified: true
+modified: false
 Edit: 2023-02-16
 mathjax: true
 mermaid: true
@@ -11,6 +11,8 @@ categories: study notes
 description: what is docker? How to use it?
 status: Writing
 ---
+
+参考文章：https://docker.easydoc.net/doc/81170005/cCewZWoN/XQEqNjiu
 
 # 简介
 
@@ -24,5 +26,113 @@ status: Writing
 - 快速安装软件
 - 多个版本软件共存
 
-# 构建自己的docker
+# 安装软件
+
+在官网对应的仓库找到对应的软件，运行命令：
+```
+docker run -d -p 6379:6379 --name redis redis:latest
+```
+
+-d 表示后台运行
+
+-p 表示端口号
+
+--name名字
+
+最后表示版本号
+
+# 制作自己的镜像image
+
+## 编写Dockerfile
+
+```
+FROM <image>:<tag> #选一个镜像
+MAINTAINER <name> #维护者信息
+
+ADD <src> <dest>    #本地文件映射到对应的目录
+
+WORKDIR <add>   #设置工作目录
+RUN <command> #执行的命令
+
+CMD <command>   #构建镜像后调用的命令
+
+```
+
+运行自己的Dockerfile：
+```
+docker build -t test:v1
+```
+
+-t表示设置版本号和名字
+
+```
+docker run -p 主机：容器
+```
+
+# 目录挂载
+
+bind mount 方式:
+```
+docker run -v <local>:<des>
+
+```
+
+volume 方式：
+
+```
+docker run -v db-data:<des>
+```
+
+# Docker-compose
+
+需要先编写一个docker-compose.yml的文件
+```
+version: "3.7"
+
+services:
+  app:  
+    build: ./   
+    ports:
+      - 80:8080
+    volumes:
+      - ./:/app 
+    environment:
+      - TZ=Asia/Shanghai
+  redis:
+    image: redis:5.0.13
+    volumes:
+      - redis:/data
+    environment:
+      - TZ=Asia/Shanghai
+
+volumes:
+  redis:
+
+```
+
+然后运行：
+```
+docker-compose up -d
+```
+
+# 发布
+
+先登陆
+```
+docker login -u username
+
+```
+
+新建一个tag
+
+```
+docker tag test:v1 username/test:v1
+
+```
+
+push
+
+```
+docker push username/test:v1
+```
 
