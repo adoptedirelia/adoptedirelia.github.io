@@ -11,6 +11,8 @@ categories: study paper-reading
 description: (2022NeurIPS)Mask Matching Transformer for Few-Shot Segmentation
 ---
 
+original paper: [link](https://arxiv.org/abs/2301.01208)
+
 # Abstract
 
 Typical method learn prototypical features to match query features. 
