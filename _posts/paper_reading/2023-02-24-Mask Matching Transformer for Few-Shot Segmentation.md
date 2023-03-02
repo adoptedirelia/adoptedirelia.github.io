@@ -8,7 +8,7 @@ mathjax: true
 mermaid: true
 tags: Few-Shot Semantic-Segmentation
 categories: study paper-reading 
-description: (2022NeurlIPS)Mask Matching Transformer for Few-Shot Segmentation
+description: (2022NeurIPS)Mask Matching Transformer for Few-Shot Segmentation
 ---
 
 # Abstract
