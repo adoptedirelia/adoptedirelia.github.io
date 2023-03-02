@@ -1,7 +1,7 @@
 ---
 title: How to use docker on Macbook
 commentable: true
-date: 2022-02-16
+date: 2023-03-02
 modified: true
 Edit: 2023-02-16
 mathjax: true
@@ -11,4 +11,18 @@ categories: study notes
 description: what is docker? How to use it?
 status: Writing
 ---
+
+# 简介
+
+- 打包：将所需要的依赖，第三方库，软件打包到一块，变成一个*安装包*
+- 安装包：将安装包上传到一个镜像仓库，其他人可以方便地获取
+- 部署：拿着安装包就可以用一个命令行运行，自动模拟出一摸一样的环境
+
+# 优势
+
+- 方便传给别人安装
+- 快速安装软件
+- 多个版本软件共存
+
+# 通常用来干什么
 
