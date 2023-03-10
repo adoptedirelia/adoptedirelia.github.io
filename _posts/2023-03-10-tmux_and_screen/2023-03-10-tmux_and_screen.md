@@ -34,6 +34,7 @@ This command is to show the status of screens.
 <img src="https://raw.githubusercontent.com/adoptedirelia/pictures_of_posts/main/tmux_and_screen/pic1.png" width="100%"> 
 
 > btw, 29281 means {pid}, zdj means task_name
+
 ## create
 
 ```
