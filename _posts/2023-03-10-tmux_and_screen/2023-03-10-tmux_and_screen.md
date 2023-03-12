@@ -21,7 +21,7 @@ Fortunately, there are two ways to solve the problem. The first is `tmux` comman
 This blog will introduce the usage of two commands.
 
 
-# tmux
+# screen
 
 ## show
 
@@ -67,7 +67,7 @@ screen -r {task_name}
 
 if you want to delete a task, what you need to do is reattach task and input `exit` in the terminal window.
 
-# screen
+# tmux
 
 ## show
 
