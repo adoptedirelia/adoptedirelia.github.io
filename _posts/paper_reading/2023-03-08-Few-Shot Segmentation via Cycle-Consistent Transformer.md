@@ -49,6 +49,34 @@ description: (2021NeurIPS)Few-Shot Segmentation via Cycle-Consistent Transformer
 
 ## Cycle-Consistent Attention
 
+this module is used to identify cycle-consistent.
 
+first, find the most similar i from j.
+
+$$ i^* = \mathop{\arg\max}\limits_{\theta} A_{(i,j)}$$
+
+then, cycle back.
+
+$$ j^* = \mathop{\arg\max}\limits_{\theta} A_{(i^*,j)} $$
+
+if $M_{s(j)} = M_{s(j^*)}$, we accept the cycle-consistent.
+
+$$ 
+B_j = 
+\begin{cases}
+0, if M_{s(j)} = M_{s(j^*)} \\
+-inf, if M_{s(j)} \neq M_{s(j^*)}
+\end{cases}
+$$
+
+so the final attention is
+
+$$ Cycleatt(Q,K,V) = softmax(A_i + B)V $$
+
+it means when B is not cycle-consistent, then we pay no attention to B.
 
 # Conclusion
+
+- our CyCTR utilizes all pixel-level support
+features and can effectively eliminate aggregating confusing and harmful support features with the
+proposed novel cycle-consistency attention
