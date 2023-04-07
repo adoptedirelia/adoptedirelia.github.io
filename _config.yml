@@ -1,6 +1,6 @@
 # Site settings
 title: Adopted Irelia
-description: zdj's personal website
+description: zdj's homepage
 baseurl: "" 
 #change the baseurl to "" if you are using it as your user GitHub Pages
 url: "https://adoptedirelia.github.io"  
