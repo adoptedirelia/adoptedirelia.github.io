@@ -9,6 +9,7 @@ mermaid: true
 tags: Few-Shot Semantic-Segmentation
 categories: study paper-reading 
 description: (2022ICJAI)CATrans:Context and Affinity Transformer for Few-Shot Segmentation
+status: Writing
 ---
 
 # Abstract

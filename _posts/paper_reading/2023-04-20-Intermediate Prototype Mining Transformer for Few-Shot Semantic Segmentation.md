@@ -9,6 +9,7 @@ mermaid: true
 tags: Few-Shot Semantic-Segmentation
 categories: study paper-reading 
 description: (2022NeurIPS)Intermediate Prototype Mining Transformer for Few-Shot Semantic Segmentation
+status: Writing
 ---
 
 # Abstract
